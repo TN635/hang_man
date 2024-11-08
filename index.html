@@ -1,0 +1,43 @@
+
+<html>
+  <head>
+    <title>Hangman</title>
+    <link rel="shortcut icon" 
+          href="https://mitchum.blog/wp-content/uploads/2019/05/favicon.png" />
+
+
+    <link href="hangman.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Charm:wght@400;700&family=Quintessential&family=Rampart+One&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barrio&family=Charm:wght@400;700&family=Quintessential&family=Rampart+One&family=Rubik+80s+Fade&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <main>
+      <h1>Food Hangman</h1>
+      
+      <div id="gallows">
+        <img style="padding-left: 70px" id="hangmanImage" src="hangman0.png">
+      </div>
+      <div id="word"></div>
+      <br>
+      <div id="controls">
+        <input type="text" id="guessBox">
+        <button id="guessWordButton" class="button" onclick="guessWord( game )">Guess Word</button>
+        <button id="newGameButton" class="button" onclick="newGame();">New Game</button>
+        <br>
+        <br>
+        <form action="https://www.tasteatlas.com/">
+          <button id="learnFoodsButton" class="button">Learn new Foods!</button>
+        </form>
+      </div>
+      <br>
+      <div id="guesses"></div>
+    </main>   
+   <script src="hangMan.js"></script>
+  </body>
+</html>
